@@ -1,19 +1,19 @@
 <?php
 
+namespace practicals;
+
 class Practical {
     //Prints "Hello, World!" to the standard output.
     public static function printHello() {
         echo "Hello, World!";
     }
-
-
+ 
     //Takes two numbers as arguments and returns their sum.
-
+     
     public static function add($num1, $num2) {
         return $num1 + $num2;
     }
-
-
+    
      //Takes an integer 'n' as an argument and returns an array of
     public static function generateFibonacciSequence($n) {
         $fibSequence = array();
@@ -34,6 +34,7 @@ class Practical {
 // Example usage:
 Practical::printHello();
 echo "\n";
+
 $sum = Practical::add(5, 7);
 echo "Sum: $sum\n";
 
