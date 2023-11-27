@@ -1,8 +1,5 @@
 <?php
-
-namespace songs;
 namespace Practicals;
-
 // Declaraction of class
 class Song {
     // Declaration of class members
@@ -10,6 +7,7 @@ class Song {
     private $artist;
     private $genre;
     private $tempo;
+
 // Constructor
     public function __construct($title, $artist, $genre, $tempo) {
         $this->title = $title;
@@ -17,6 +15,12 @@ class Song {
         $this->genre = $genre;
         $this->tempo = $tempo;
     }
+    // public function __construct($title, $artist, $genre, $tempo) {
+    //     $this->title = $title;
+    //     $this->artist = $artist;
+    //     $this->genre = $genre;
+    //     $this->tempo = $tempo;
+    // }
 //Getter and Setter Methods
     public function getTitle() {
         return $this->title;

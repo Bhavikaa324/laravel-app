@@ -1,17 +1,9 @@
+
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Practicals\Song;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
 
 Route::get('/', function () {
@@ -27,8 +19,16 @@ Route::get('/greeting', function () {
 Route::get('/hello', function () {
     return view('veggies');
 });
-
 // On route '/veggies 'a chart should be seen , with name and price of veggies
 Route::get('/veggies', function () {
     return view('table');
+});
+
+Route::get('/songs', function () {
+    $song = new Song("With You","AP Dillon","AP Dillon",2);
+    $song->setTitle("With You");
+    $song->setArtist("AP Dillon");
+    $song->setGenre("With You");
+    $song->setTempo(2);
+    return view('songs',['songs' => $song]);
 });
