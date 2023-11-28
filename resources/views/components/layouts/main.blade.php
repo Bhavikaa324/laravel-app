@@ -20,6 +20,8 @@
         <div class="playlist-item">Playlist 1</div>
         <div class="playlist-item">Playlist 2</div>
     </sidebar>
+
+    
     @yield('content')
 
     <footer>
