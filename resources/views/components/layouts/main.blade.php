@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playlist Viewer</title>
+
     <title>{{ $title ?? "Cool Web App" }}</title>
     <link href="{{ asset('css/layout/main.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/layouts/main.css') }}" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -20,12 +22,10 @@
         <div class="playlist-item">Playlist 1</div>
         <div class="playlist-item">Playlist 2</div>
     </sidebar>
-
-    
     @yield('content')
-
     <footer>
         <p>&copy; 2023 Playlist Viewer | <a href="#">About</a> | <a href="#">Privacy</a></p>
     </footer>
 </body>
 </html>
+ 
